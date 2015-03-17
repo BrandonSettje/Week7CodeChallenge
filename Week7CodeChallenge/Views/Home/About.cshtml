@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<ul class="nav nav-tabs nav-justified">
+    <li data-url="@Url.Action("Who", "Abouttabview")" role="presentation" class="active ajax-link submenu"><a href="#">Who</a></li>
+    <li data-url="@Url.Action("What", "Abouttabview")" role="presentation" class="ajax-link submenu"><a href="#">What</a></li>
+    <li data-url="@Url.Action("Why", "Abouttabview")" role="presentation" class="ajax-link submenu"><a href="#">Why</a></li>
+    <li data-url="@Url.Action("How", "Abouttabview")" role="presentation" class="ajax-link submenu"><a href="#">How</a></li>
+    <li data-url="@Url.Action("Where", "Abouttabview")" role="presentation" class="ajax-link submenu"><a href="#">Where</a></li>
+</ul>
+
+<div id="subContainer">@Html.Action("Who", "Abouttabview")</div>
